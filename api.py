@@ -28,7 +28,6 @@ def getSenAuth(keyword):
     origin=result['items'][rand]['source']
     return {'sentence':sentence,'author':author,'origin':origin}
 
-print getSenAuth("I am cool")
 
 
     

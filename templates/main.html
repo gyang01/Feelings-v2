@@ -38,12 +38,9 @@
 <font face="georgia">
       <div>
 	{% if answer %}
-	<p><h2># of People Who <i>Feel</i> Me:</h2> {{count}}
-	<p><h2>Thoughts:</h1>
-{% for item in thoughts %}
-<p>{{item}}
-  {% endfor %}
-  {% endif %}
+	<h3>{{name}} from {{origin}} feels the same</h3>
+	<h3>"{{sentence}}"</h3>
+	{% endif %}
 </div>
 </font>
 </div>
