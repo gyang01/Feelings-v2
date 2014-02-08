@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" name="viewport" />
+  <title>Feel Me?</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster:400,700">
+  <link rel="stylesheet" href="/static/css/bootstrap.css">
+  
+  <style>
+    body{padding-top:50px;
+    background-image:url("../static/img/bkgd2.jpg");
+    font-family:'Lobster',cursive;}
+  </style>
+</head>
+<body>
+<!--
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+  </div>
+</div>
+-->
+<div class="container">
+  <div align="center">
+    <font face="Lobster">
+      <h1>Are You Feeling What I'm Feeling?</h1>
+      
+	<form method="POST" action="/" name="emotion-search" class="emotion-search">
+	  <input name="emotionvalue" type="text" placeholder="Enter sentence." class="input-mysize emotion">
+	  <p align="center"><button name="emotion" class="btn btn-large btn-info" type="submit" value="emotion">Feel</button></p>
+	</form>
+      </font>
+<font face="georgia">
+      <div>
+	{% if answer %}
+	<h3>{{name}} from {{origin}} feels the same</h3>
+	<h3>"{{sentence}}"</h3>
+	{% endif %}
+</div>
+</font>
+</div>
+</div>
+<script src="static/js/jquery-1.11.1.min.js"/>
+<!--  <script src="static/js/validate.min.js"/>
+      <script>
+	var validator = new FormValidator("emotion-search",[{
+    name: 'emotion',
+	display: 'ONE WORD ONLY',
+	rules: 'required|no_space'
+	}),
+	function(errors, event){
+	if(errors.length > 0){
+    var errorString='No Spaces. ONE Word Only!';
+	}
+	el.innerHTML=errorString;
+	}
+    )
+	validation for emotion: no space = ^[\S]*$
+      </script>-->
+</body>
+</html>
