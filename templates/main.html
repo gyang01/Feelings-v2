@@ -25,7 +25,7 @@
     <font face="georgia">
       <h1>Are You Feeling What I'm Feeling?</h1>
       <form method="POST" action="/" name="emotion-search" class="emotion-search">
-	<input name="emotionvalue" type="text" placeholder="Enter sentence." class="emotion">
+	<input name="emotionvalue" type="text" placeholder="Enter sentence." class="input-mysize emotion">
 	<p align="center"><button name="emotion" class="btn btn-large btn-info" type="submit" value="emotion">Feel</button></p>
       </form>
       <div>
@@ -33,7 +33,7 @@
 	<p><h2># of People Who <i>Feel</i> Me:</h2> {{count}}
 	<p><h2>Thoughts:</h1>
 	  {% for item in thoughts %}
-	  {{item}}
+	  <p>{{item}}
 	  {% endfor %}
 	  {% endif %}
       </div>
