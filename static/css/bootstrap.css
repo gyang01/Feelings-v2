@@ -240,7 +240,7 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lobster",georgia, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
@@ -781,7 +781,7 @@ h3 {
 }
 
 h1 {
-  font-size: 38.5px;
+  font-size: 60px;
 }
 
 h2 {
@@ -1082,7 +1082,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lobster","Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 label {
@@ -1108,11 +1108,12 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   display: inline-block;
-  height: 20px;
+  height: 50px;
   padding: 4px 6px;
+  margin-top:10px;
   margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 40px;
   color: #555555;
   vertical-align: middle;
   -webkit-border-radius: 4px;
@@ -1123,11 +1124,11 @@ input[type="color"],
 input,
 textarea,
 .uneditable-input {
-  width: 400px;
+  width: 500px;
 }
 
 textarea {
-  height: auto;
+  height: 50px;
 }
 
 textarea,
@@ -3307,11 +3308,11 @@ button.close {
 }
 
 .btn-large {
-  padding: 11px 19px;
-  font-size: 17.5px;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
+  padding: 20px 30px;
+  font-size: 30px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
 }
 
 .btn-large [class^="icon-"],
@@ -3691,7 +3692,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn-group > .btn-large {
-  font-size: 17.5px;
+  font-size: 24px;
 }
 
 .btn-group > .btn:first-child {
@@ -4536,7 +4537,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   padding: 4px 14px;
   margin-bottom: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lobster", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
