@@ -12,6 +12,25 @@
     background-image:url("../static/img/bkgd2.jpg");
     font-family:'Lobster',cursive;}
   </style>
+
+<script src="static/js/jquery-1.11.1.min.js"/>
+<script src="../static/js/jquery.isloading.min.js"></script>
+<script language="javascript" type="text/javascript">
+  
+  $(document).load(function(){
+  $( "#basic" ).isLoading( "hide" )});
+  
+  
+  
+    // Action on Click
+  $(document).ready(function(){
+  $( "#basic" ).click(function() {
+  $(this).isLoading();
+  });
+  });
+  
+</script>
+
 </head>
 <body>
 <!--
@@ -45,22 +64,6 @@
 </font>
 </div>
 </div>
-<script src="static/js/jquery-1.11.1.min.js"/>
-<!--  <script src="static/js/validate.min.js"/>
-      <script>
-	var validator = new FormValidator("emotion-search",[{
-    name: 'emotion',
-	display: 'ONE WORD ONLY',
-	rules: 'required|no_space'
-	}),
-	function(errors, event){
-	if(errors.length > 0){
-    var errorString='No Spaces. ONE Word Only!';
-	}
-	el.innerHTML=errorString;
-	}
-    )
-	validation for emotion: no space = ^[\S]*$
-      </script>-->
+
 </body>
 </html>
